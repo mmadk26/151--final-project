@@ -7,19 +7,16 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Georgia', serif; background: #0d0d0d; color: #f0f0f0; }
-    /* NAV */
     nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.85); display: flex; justify-content: space-between; align-items: center; padding: 18px 40px; z-index: 100; }
     nav .logo { font-size: 1.4em; letter-spacing: 3px; color: #fff; text-transform: uppercase; }
     nav ul { list-style: none; display: flex; gap: 30px; }
     nav ul li a { color: #ccc; text-decoration: none; font-size: 0.9em; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
     nav ul li a:hover { color: #fff; }
-    /* HERO */
     .hero { height: 100vh; background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #0a0a0a 100%); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
     .hero h1 { font-size: 4em; letter-spacing: 8px; text-transform: uppercase; color: #fff; margin-bottom: 15px; }
     .hero p { font-size: 1.2em; color: #aaa; letter-spacing: 4px; text-transform: uppercase; }
     .hero .scroll-hint { margin-top: 60px; font-size: 0.8em; color: #555; letter-spacing: 3px; animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
-    /* GALLERY */
     #gallery { padding: 80px 40px; }
     #gallery h2 { text-align: center; font-size: 2em; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 50px; color: #ddd; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
@@ -28,11 +25,9 @@
     .photo-card:hover img { transform: scale(1.08); filter: grayscale(0%); }
     .photo-card .caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: #fff; padding: 20px 15px 15px; transform: translateY(100%); transition: transform 0.4s ease; font-size: 0.9em; letter-spacing: 1px; }
     .photo-card:hover .caption { transform: translateY(0); }
-    /* ABOUT */
     #about { padding: 80px 40px; max-width: 800px; margin: 0 auto; text-align: center; border-top: 1px solid #222; }
     #about h2 { font-size: 2em; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 30px; color: #ddd; }
     #about p { color: #999; line-height: 2; font-size: 1.05em; margin-bottom: 20px; }
-    /* CONTACT */
     #contact { padding: 60px 40px; text-align: center; border-top: 1px solid #222; }
     #contact h2 { font-size: 2em; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 20px; color: #ddd; }
     #contact p { color: #777; margin-bottom: 10px; }
@@ -55,37 +50,59 @@
 
   <section class="hero">
     <h1>Malik Madkins</h1>
-    <p>Photography &mdash; Chicago, IL</p>
+    <p>Photography — Chicago, IL</p>
     <div class="scroll-hint">&#8595; Scroll to explore</div>
   </section>
 
   <section id="gallery">
     <h2>Portfolio</h2>
     <div class="grid">
+
       <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80" alt="Chicago Skyline">
-        <div class="caption">Chicago Skyline</div>
-      </div>
-      <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=600&q=80" alt="Street Photography">
-        <div class="caption">Street Photography</div>
-      </div>
-      <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600&q=80" alt="Urban Architecture">
-        <div class="caption">Urban Architecture</div>
-      </div>
-      <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Portrait">
+        <img src="images/DSC_0562.jpg" alt="Portrait">
         <div class="caption">Portrait</div>
       </div>
+
       <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1499346030926-9a72daac6c63?w=600&q=80" alt="Lake Michigan">
-        <div class="caption">Lake Michigan</div>
+        <img src="images/image00010.jpg" alt="Editorial">
+        <div class="caption">Editorial</div>
       </div>
+
       <div class="photo-card">
-        <img src="https://images.unsplash.com/photo-1468421870903-ef3bfb0722a4?w=600&q=80" alt="Night Lights">
-        <div class="caption">Night Lights</div>
+        <img src="images/DSC_0496.jpg" alt="Nature">
+        <div class="caption">Nature</div>
       </div>
+
+      <div class="photo-card">
+        <img src="images/image00011.jpg" alt="Event">
+        <div class="caption">Event</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/Elena-2-09-05-2026-15-00-20.jpg" alt="Creative Portrait">
+        <div class="caption">Creative Portrait</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/DSC_0650.jpg" alt="Fashion">
+        <div class="caption">Fashion</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/MZM_0867.jpg" alt="Street">
+        <div class="caption">Street</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/MZM_1133.jpg" alt="Creative">
+        <div class="caption">Creative</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/resized-malik_m43_68b20c67e9253.jpg" alt="Portrait">
+        <div class="caption">Portrait</div>
+      </div>
+
     </div>
   </section>
 
@@ -101,9 +118,7 @@
     <p><a href="mailto:malik@example.com">malik@example.com</a></p>
   </section>
 
-  <footer>
-    <p>&copy; 2026 Malik Madkins Photography. All rights reserved.</p>
-  </footer>
+  <footer>&copy; 2026 Malik Madkins Photography. All rights reserved.</footer>
 
 </body>
 </html>
